@@ -1,4 +1,35 @@
-/* ===Containers=== */
+body{
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700400162.jpg");
+    margin: auto;  
+}
+
+#headsTails-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+    display: none;    
+}
+
+#heads{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+#tails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+p{
+    display: none;
+}
+
 #page-container{
     display: flex;
     align-items: center;
@@ -6,22 +37,16 @@
 }
 
 /* #game-container{
-
+    display: flex;
+    justify-content: center;
 } */
 
 #contrast-container{
     display: flex;
     align-items: center;
     justify-content: center;    
-    width: 100vmin;
-    height: 50vmin;
-}
-
-#coin-container{        
-    width: 20vmin;
-    height: 22vmin;
-    border: solid black;
-    background-image: url("https://i.gifer.com/Me9y.gif");
+    width: inherit;
+    height: inherit;
 }
 
 #player-container1{
@@ -38,16 +63,23 @@
     border: solid black;
 }
 
+#coin-container{    
+    width: 100%;    
+    border: solid black;
+    background-image: url("https://i.gifer.com/Me9y.gif");   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #selectPlayer-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-*{
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700400162.jpg");
-    margin: auto;
-    
+#coin-container > #quarter{
+    width: 60%;
 }
 
 #spacing{
@@ -80,7 +112,10 @@ h1{
 }
 
 #player-section{
-    color: white;
+    display: flex;
+    flex-direction: column;
+    /* color: white; */
+    font-size: 30px;
 }
 
 #player1Name{
@@ -88,6 +123,7 @@ h1{
     background-color: rgb(18, 58, 18);
     text-align: center;
     font-size: 3em;
+    width: 29vw;
 }
 
 #player2Name{
@@ -95,5 +131,21 @@ h1{
     background-color: rgb(18, 58, 18);
     text-align: center;
     font-size: 3em;
-    
+    width: 29vw;    
 }
+
+#nameEntry1{
+    text-align: center;
+    width: 30vw;
+    color: red;
+    background-color: silver;
+}
+
+#nameEntry2{
+    text-align: center;
+    width: 30vw;
+    color: blue;
+    background-color: silver;
+}
+
+

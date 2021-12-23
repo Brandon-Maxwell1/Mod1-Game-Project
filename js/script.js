@@ -1,29 +1,42 @@
 // ===DOM Entries===
 
 
-// Player 1 choose heads or tail
 
-function addPlayerName1(){
-    let input = document.getElementById('nameEntry')
-    let div = document.getElementById('player1Name')    
-    div.innerHTML = div.innerHTML + input.value;
-    }
 
-function addPlayerName2(){
-    let input = document.getElementById('nameEntry')
-    let div = document.getElementById('player2Name')
-    div.innerHTML = div.innerHTML + input.value;
+// Enter player 1 and player 2 name and appears in input
+function addPlayerName1() {
+    const x = document.getElementById("nameEntry1").value;
+    document.getElementById("player1Name").innerHTML = x;
+    document.getElementById("nameEntry1").append
+  }
+function addPlayerName2() {
+    const y = document.getElementById("nameEntry2").value;
+    document.getElementById("player2Name").innerHTML = y;
+    document.getElementById("nameEntry2").append
+  }
+
+// Make the player name box disable entry
+function disableButton1() {
+    const xx = document.getElementById("nameEntry1");
+    const xy = document.getElementById("buttonP1");
+    xx.disabled = true;
+    xy.disabled = true;
+  }
+
+function disableButton2() {
+    const yy = document.getElementById("nameEntry2");
+    const yx = document.getElementById("buttonP2");
+    yy.disabled = true;
+    yx.disabled = true;
+  }
+
+// Heads/tails div appears once both players added
+function headsTails(){
+    const xxx = document.createElement("BUTTON");
+    document.getElementById("buttonP2") = xxx;
+    xxx.append
+
 }
 
+// Enter player1 and player2 name
 
-function choose(){
-let heads = 1
-let tails = 2
-let randNum = Math.round((Math.random() * (2 - 1)) + 1)
-
-if(p1 === heads && randNum === 1)
-console.log('HEADS: p1 wins')
-else{
-    console.log('TAILS: p2 wins')
-}
-}

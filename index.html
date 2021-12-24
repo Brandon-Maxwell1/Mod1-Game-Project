@@ -13,16 +13,18 @@
 
     <div id="spacing"></div>
 <div id="headsTails-container">
+    <p>Player1, you're the home team.  Please select heads or tails.</p>
     <div id="heads"> <input type="image" img src="images/Heads.png" alt="heads_image" width="30%"></div>    
     <p>HEADS</p>
     <div id="spacing"></div>
-    <div id="tails"><input input type="image" img src="images/Tails.png" alt="tails_image" width="30%"></div>    
+    <div id="tails"><input type="image" img src="images/Tails.png" alt="tails_image" width="30%"></div>    
     <p>TAILS</p>
 </div>
     
     <div id="page-container">
     <div id="contrast-container">
     <div>
+        <div id="choice1"></div>
         <div id="player-container1"></div>
         <div id="player1Name"></div>
     </div>
@@ -32,6 +34,7 @@
                 
             </div>
     <div>   
+        <div id="choice2"></div>
         <div id="player-container2"></div>
         <div id="player2Name"></div>
     </div>
@@ -47,7 +50,7 @@
       <button id="buttonP1" onclick="addPlayerName1(); disableButton1()">Add Player</button>
       <br>
       <input type="text" id="nameEntry2" placeholder="Player2 Name">
-      <button id="buttonP2" onclick="addPlayerName2(); disableButton2()">Add Player</button>
+      <button id="buttonP2" onclick="addPlayerName2(); disableButton2(); showHeadsTailsButton()">Add Player</button>
       </section>
 </div>
 

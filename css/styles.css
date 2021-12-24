@@ -13,7 +13,7 @@ body{
 }
 
 #heads{
-    display: flex;
+    display: flex;    
     align-items: center;
     justify-content: center;
     /* display: none; */
@@ -27,7 +27,9 @@ body{
 }
 
 p{
-    display: none;
+    /* display: none; */
+    color: white;
+    font-size: 1.5em;    
 }
 
 #page-container{
@@ -50,14 +52,14 @@ p{
 }
 
 #player-container1{
-    width: 30vmin;
+    max-width: 33vmin;
     height: 30vmin;
     background-image: url("https://media3.giphy.com/media/9rnvEjfbBPKB4F5GQv/giphy.gif?cid=63e6b07epvub3vjodb88rc3h3ft1b5ak1x5wnjwpu6pxjfis&rid=giphy.gif&ct=g");
     border: solid black;
 }
 
 #player-container2{
-    width: 30vmin;
+    max-width: 33vmin;
     height: 30vmin;
     background-image: url("https://i.pinimg.com/originals/b6/06/70/b60670baa0651f8c7e028dc8d05a1568.gif");
     border: solid black;

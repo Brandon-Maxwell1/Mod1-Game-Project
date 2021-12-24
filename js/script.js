@@ -31,12 +31,49 @@ function disableButton2() {
   }
 
 // Heads/tails div appears once both players added
-function headsTails(){
-    const xxx = document.createElement("BUTTON");
-    document.getElementById("buttonP2") = xxx;
-    xxx.append
+function showHeadsTailsButton() {
+    const xxx = document.getElementById("headsTails-container");
+    if (xxx.style.display === "none") {
+      xxx.style.display = "none";
+    } else {
+      xxx.style.display = "flex";
+    }
+  }
 
+//   Player1 select heads. ****Why isn't this working?****
+document.getElementById("heads").addEventListener("click, pickHeads")
+function pickHeads(){
+    document.getElementById("choice1").innerHTML="HEADS";
+    document.getElementById("choice2").innerHTML="TAILS";
 }
 
-// Enter player1 and player2 name
+
+//   Player1 select tails. ****Why isn't this working?****
+document.getElementById("tails").addEventListener("click, pickTails")
+function pickTails(){
+    document.getElementById("choice1").innerHTML="TAILS";
+    document.getElementById("choice2").innerHTML="HEADS";
+}
+
+
+// Flip coin div appears once heads/tails has been chosen
+function showFlipCoin() {
+    const yyy = document.getElementsByClassName("flipButton");
+    when(choice1 && choice2 != undefined)
+    if (yyy.style.display === "none") {
+      yyy.style.display = "none";
+    } else {
+      yyy.style.display = "flex";
+    }
+  }
+
+
+
+
+// }
+
+// // Gameplay
+// function flipCoin(){
+//     if()
+// }
 

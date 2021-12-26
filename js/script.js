@@ -1,8 +1,5 @@
 // ===DOM Entries===
 
-
-
-
 // Enter player 1 and player 2 name and appears in input
 function addPlayerName1() {
     const x = document.getElementById("nameEntry1").value;
@@ -67,13 +64,23 @@ function showFlipCoin() {
     }
   }
 
+// Coin flip occurs
+function flipCoin(){
+    if(Math.random() < 0.50) {
+        Tails;
+    } else {
+        Heads;
+    }
+}
+
+// Determine the winner
+function winnerIs(){
+    if(document.getElementById("choice1") === true)
+    return "Player1 wins the toss!!" 
+    else{
+        return "Player2 wins the toss!!"
+    }
+}
 
 
-
-// }
-
-// // Gameplay
-// function flipCoin(){
-//     if()
-// }
 

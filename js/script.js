@@ -38,7 +38,7 @@ function showHeadsTailsButton() {
   }
 
 //   Player1 select heads. ****Why isn't this working?****
-document.getElementById("heads").addEventListener("click, pickHeads")
+document.getElementById("headsImage").addEventListener("click, pickHeads")
 function pickHeads(){
     document.getElementById("choice1").innerHTML="HEADS";
     document.getElementById("choice2").innerHTML="TAILS";
@@ -46,23 +46,23 @@ function pickHeads(){
 
 
 //   Player1 select tails. ****Why isn't this working?****
-document.getElementById("tails").addEventListener("click, pickTails")
+document.getElementById("tailsImage").addEventListener("click, pickTails")
 function pickTails(){
     document.getElementById("choice1").innerHTML="TAILS";
     document.getElementById("choice2").innerHTML="HEADS";
 }
 
 
-// Flip coin div appears once heads/tails has been chosen
-function showFlipCoin() {
-    const yyy = document.getElementsByClassName("flipButton");
-    when(choice1 && choice2 != undefined)
-    if (yyy.style.display === "none") {
-      yyy.style.display = "none";
-    } else {
-      yyy.style.display = "flex";
-    }
-  }
+// Flip coin button appears once heads/tails has been chosen
+// function showFlipCoin() {
+//     const yyy = document.getElementsByClassName("flipButton");
+//     when(choice1 && choice2 !== undefined)
+//     if (yyy.style.display === "none") {
+//       yyy.style.display = "none";
+//     } else {
+//       yyy.style.display = "flex";
+//     }
+//   }
 
 // Coin flip occurs
 function flipCoin(){
@@ -75,10 +75,10 @@ function flipCoin(){
 
 // Determine the winner
 function winnerIs(){
-    if(document.getElementById("choice1") === true)
-    return "Player1 wins the toss!!" 
+    if(document.getElementById("choice1") === flipCoin())
+    document.getElementById("result-container").innerHTML="Player1 wins the toss!!"
     else{
-        return "Player2 wins the toss!!"
+        document.getElementById("result-container").innerHTML="Player2 wins the toss!!"
     }
 }
 

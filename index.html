@@ -14,35 +14,42 @@
     <div id="spacing"></div>
 <div id="headsTails-container">
     <p>Player1, you're the home team.  Please select heads or tails.</p>
-    <div id="heads"> <input type="image" img src="images/Heads.png" alt="heads_image" width="30%"></div>    
+    <div id="heads"> 
+        <form id="formHeads"><input type="image" id="headsImage" img src="images/Heads.png" alt="heads_image" width="30%"></form>
+    </div>    
     <p>HEADS</p>
-    <div id="spacing"></div>
-    <div id="tails"><input type="image" img src="images/Tails.png" alt="tails_image" width="30%"></div>    
+   
+    <div id="tails">
+        <form id="formTails"><input type="image" id="tailsImage" img src="images/Tails.png" alt="tails_image" width="30%"></form>
+    </div>    
     <p>TAILS</p>
 </div>
     
     <div id="page-container">
-    <div id="contrast-container">
-    <div>
-        <div id="choice1"></div>
-        <div id="player-container1"></div>
-        <div id="player1Name"></div>
-    </div>
-            <div id="game-container">
-                <div id="result-container"></div>
-                <div id="coin-container"><img src="images/Coin.png" alt="coin_image" id="quarter"></div>
-                <div><button onclick="showFlipCoin()" class="flipButton" type="button" value="input">Flip Coin</button></div> <!-- figure out how to make button appear-->
-                
-            </div>
-    <div>   
-        <div id="choice2"></div>
-        <div id="player-container2"></div>
-        <div id="player2Name"></div>
-    </div>
-    </div>        
+    <!-- <div id="contrast-container">  by removing this, corrected a spacing issue -->
+        <div id="player-container1">
+            <div id="choice1"></div>
+            <div id="player1Name"></div>
+        </div>
 
-    
+
+
+        <div id="game-container">
+            <div id="result-container"></div>
+            <div id="coin-container"><img src="images/Coin.png" alt="coin_image" id="quarter"></div>
+            <div><button onclick="flipCoin()" class="flipButton" type="button" value="input">Flip Coin</button></div> <!-- figure out how to make button appear-->
+            
+        </div>
+
+
+        <div id="player-container2">
+            <div id="choice2"></div>
+            <div id="player2Name"></div>
+        </div>
+ 
     </div>
+    <!-- </div>     spacing issue resolved    -->  
+</div>
 
     
 <div id="selectPlayer-container">
@@ -63,6 +70,7 @@
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
 
 
 
